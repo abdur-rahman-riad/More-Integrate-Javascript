@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Functional Bank</title>
+    <!-- Tailwind CDN link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-center font-bold text-purple-600 p-8">Secret Page of the Bank</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- Deposit/Withdraw/Balance Card Start -->
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-red-500 text-center p-8 rounded-lg text-white">
+                    <h1 class="text-3xl font-semibold py-2">Deposit</h1>
+                    <h1 class="text-4xl font-bold py-2">$<span id="deposit-box">00</span></h1>
+                </div>
+                <div class="bg-green-500 text-center p-8 rounded-lg text-white">
+                    <h1 class="text-3xl font-semibold py-2">Withdraw</h1>
+                    <h1 class="text-4xl font-bold py-2">$<span id="withdraw-box">00</span></h1>
+                </div>
+                <div class="bg-blue-500 text-center p-8 rounded-lg text-white">
+                    <h1 class="text-3xl font-semibold py-2">Balance</h1>
+                    <h1 class="text-4xl font-bold py-2">$<span id="balance-box">500</span></h1>
+                </div>
+            </div>
+            <!-- Deposit/Withdraw/Balance Card End -->
+        </section>
+        <!-- Deposit/Withdraw Input Filed Start -->
+        <section class="mt-4">
+            <div class="grid grid-cols-2 w-3/4 gap-3 mx-auto">
+                <div class="bg-indigo-700 text-center p-8 rounded-lg text-white">
+                    <h2 class="text-3xl font-semibold py-2">Deposit</h2>
+                    <div>
+                        <input id="deposit-amount" class="block w-3/4 mx-auto my-4 p-3 text-black rounded-md"
+                            type="text" placeholder="Deposit Amount">
+                        <button id="deposit-btn"
+                            class="bg-red-500 text-white px-8 py-2 mt-2 font-semibold text-md block mx-auto rounded-lg">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-yellow-500 text-center p-8 rounded-lg text-white">
+                    <h2 class="text-3xl font-semibold py-2">Withdraw</h2>
+                    <div>
+                        <input id="withdraw-amount" class="block w-3/4 mx-auto my-4 p-3 text-black rounded-md"
+                            type="text" placeholder="Withdraw Amount">
+                        <button id="withdraw-btn"
+                            class="bg-blue-600 text-white px-8 py-2 mt-2 font-semibold text-md block mx-auto rounded-lg">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit/Withdraw Input Filed Start -->
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
